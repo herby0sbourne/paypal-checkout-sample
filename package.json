@@ -1,0 +1,20 @@
+{
+  "name": "paypal-button",
+  "version": "1.0.0",
+  "repository": "https://github.com/herby0sbourne/paypal-checkout-sample.git",
+  "author": "Herby <herbyosbourne31@gmail.com>",
+  "license": "MIT",
+  "source": "./index.html",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build --dist-dir build",
+    "predeploy": "yarn build",
+    "deploy": "gh-pages -d build"
+  },
+  "dependencies": {
+    "gh-pages": "^4.0.0"
+  },
+  "devDependencies": {
+    "parcel": "^2.7.0"
+  }
+}

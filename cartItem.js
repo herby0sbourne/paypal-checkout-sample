@@ -41,7 +41,6 @@ export const addItem = (id) => {
     // items = [...items];
     items[existingItemIndex] = updateItem;
 
-    // console.log(items);
     itemsContainer.innerHTML = '';
     items.forEach((item) => {
       const html = createCartItem(item);
@@ -64,12 +63,14 @@ export const reduceItem = (id) => {
     items = [...items];
     items[existingItemIndex] = updateItem;
 
-    console.log(items);
     itemsContainer.innerHTML = '';
+
     items.forEach((item) => {
       const html = createCartItem(item);
       itemsContainer.insertAdjacentHTML('afterbegin', html);
     });
+
+    total(items);
   }
 };
 

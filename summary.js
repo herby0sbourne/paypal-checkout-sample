@@ -8,6 +8,9 @@ export const total = (cartItems) => {
     return prevValue + cartItem.price;
   }, 0);
 
-  console.log(totalCost);
-  console.log(totalValue.textContent);
+  totalValue.textContent = totalCost.toFixed(2);
+
+  // console.log(totalCost);
+  // console.log(totalValue.textContent);
+  return totalCost.toFixed(2);
 };
